@@ -37,5 +37,19 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
+var request = require('request');
 module.exports = app;
+city= "Memphis"
+var url= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=35f1b4967b15466c87502e7b3aef9681`
+app.get('/', function(req, res){
+  request(url, function(error, response, body){
+    weather_json= JSON.parse(body)
+    var weather ={
+      city: city,
+      tempurature: weather.json.main.temp,
+      description: weather_json.weather[0].description
+    }
+    var weather_data={weather: weather}
+    res.render('views/layout.jade', weather_data)
+  })
+})
