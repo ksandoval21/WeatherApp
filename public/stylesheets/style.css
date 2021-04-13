@@ -1,9 +1,31 @@
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: rgb(147, 248, 255);
 }
 
 a {
   color: #00B7FF;
+}
+.city{
+  font-size: 30px;
+  font-weight: bold;
+}
+.containers{
+  background-color: aqua;
+  width: 200px;
+  text-align: center;
+  display:auto;
+  position: relative;
+  left: 550px;
+}
+.title{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  
+}
+.input{
+  padding-left: 50px;
+  padding-top: 50px;
 }
