@@ -3,7 +3,7 @@ extends layout
 block content    
     input(type="text", name="city", placeholder="ENTER CITY", id='input')
     p 
-    input(type="submit")
+    input(type="submit" id="btn")
     p #{city}
     p #{weather.temperature}
     p #{weather.description}
