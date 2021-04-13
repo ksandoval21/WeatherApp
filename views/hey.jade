@@ -1,12 +1,17 @@
 extends layout 
 
-block content    
-    input(type="text", name="city", placeholder="ENTER CITY", id='input')
-    p 
-    input(type="submit" id="btn")
-    p #{city}
-    p #{weather.temperature}
-    p #{weather.description}
-    p #{weather.icon}
+block content
+    div.input
+        p Search for a City
+        input(type="text", name="city", placeholder="ENTER CITY", id='input')
+        p 
+        input(type="submit" id="btn")
+    p.title Todays Weather In: 
+    div.containers
+        p.city #{city}
+        p 
+        p #{weather.icon}
+        p It is #{weather.temperature}°F today.
+        p #{weather.description}
     
     script(type="text/javascript" src="javascripts/dom.js").
