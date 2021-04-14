@@ -2,14 +2,16 @@ extends layout
 
 
 block content    
-    script(type="text/javascript" src="javascripts/dom.js").
+    
     input(type="text", name="city", placeholder="ENTER CITY", id='input')
     p 
-    input(type="submit" id="btn")
+    input(type="submit" id="cityButton" value="Find City")
+    
     p #{city}
-    p #{weather.temperature}
-    p #{weather.description}
-    p #{weather.icon}
+    //- p #{weather.temperature}
+    //- p #{weather.description}
+    //- p #{weather.icon}
+    script(type="text/javascript" src="javascripts/dom.js").
     
     
     
