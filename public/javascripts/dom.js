@@ -19,15 +19,11 @@ cityBtn.addEventListener("click", () => {
         icon : data.weather[0].icon
     };
     city.innerHTML = weather.city
-    temp.innerHTML = weather.temperature
+    temp.innerHTML = weather.temperature +" °F"
     description.innerHTML = weather.description
-//     icon.innerText =`http://openweathermap.org/img/w/${weather.icon}.png`;
-// });
+    icon.src = `http://openweathermap.org/img/w/${weather.icon}.png`;
+
+});
 
     console.log(data)
-}
-        
-    
-)}
-
-)
+})
