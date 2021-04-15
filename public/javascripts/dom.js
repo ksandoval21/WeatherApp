@@ -7,10 +7,14 @@ const icon = document.getElementById("icon")
 let stateCode 
 const stateInput = document.getElementById("stateInput")
 const star = document.getElementById("star")
+const container = document.querySelector(".container")
+const title = document.querySelector(".title")
+
 
 cityBtn.addEventListener("click", () => {
-    
     var url= `https://api.openweathermap.org/data/2.5/weather?zip=${cityInput.value},US&appid=35f1b4967b15466c87502e7b3aef9681`
+    container.style.visibility ="visible";
+    title.style.visibility ="visible";
     console.log(url)
     fetch(url)
     .then(response => response.json())

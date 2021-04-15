@@ -2,13 +2,14 @@ extends layout
 
 block content
     h1.logo Weatherly 
+    input(type="range", min='1', max='2', step='1')
     div.input
-        p Look up a city!
-        input(type="text", name="city", placeholder="ENTER CITY", id='cityInput')
+        p Look up a city by zipcode!
+        input(type="text", name="city", placeholder="ENTER ZIP CODE", id='cityInput')
         input(type="submit" id="cityButton" value="Find City")
-    p.title Todays Weather in:
+    p.title Today's Weather in:
     div.container
-        span.fa.fa-star#star
+        //- span.fa.fa-star#star
         div.items
             p#city.city
             img.icon#icon
