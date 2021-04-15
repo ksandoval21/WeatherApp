@@ -35,11 +35,7 @@ cityBtn.addEventListener("click", () => {
 
 
 })
-// if (cityInput.value == " "){
-//     container.style.visibility = "hidden";;
-// }else{
-//     container.style.visibility ="visible";
-// }
+
 let display= false
 star.addEventListener("click", () => {
 if(display){
