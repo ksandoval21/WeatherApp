@@ -4,13 +4,9 @@ var request = require('request');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Weather App' });
 });
 
-router.get('/weather', function(req, res, next){
-  res.render('hey')
-
-})
 
 
 module.exports = router;
