@@ -15,7 +15,6 @@ a {
 .container{
   background-color: aqua;
   width: 200px;
-  text-align: center;
   display:auto;
   position: relative;
   left: 550px;
@@ -29,4 +28,15 @@ a {
 .input{
   padding-left: 50px;
   padding-top: 50px;
+}
+.checked{
+  color: yellow;
+}
+#star{
+  font-size: 25px;
+  padding: 5px;
+  
+}
+.items{
+  text-align: center;
 }

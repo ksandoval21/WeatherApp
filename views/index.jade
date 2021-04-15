@@ -1,22 +1,22 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
- 
-  div.input
-      p Look up a city!
-      p
-          input(type="text", name="city", placeholder="ENTER CITY", id='cityInput')
-          
-          input(type="text", name="state", placeholder="STATE CODE", id='stateInput')
-      p 
-      input(type="submit" id="cityButton" value="Find City")
-  p.title Todays Weather in:
-  div.containers
-      p#city.city
-      p#temperature
-      p#description 
-      p#icon 
-  script(type="text/javascript" src="javascripts/dom.js").
-  
+    h1= title
+    p Welcome to #{title}
+    div.input
+        p Look up a city!
+        p
+            input(type="text", name="city", placeholder="ENTER CITY", id='cityInput')
+            
+            input(type="text", name="state", placeholder="STATE CODE", id='stateInput')
+        p 
+        input(type="submit" id="cityButton" value="Find City")
+    p.title Todays Weather in:
+    div.container
+        span.fa.fa-star.checked#star
+        div.items
+            p#city.city
+            img.icon#icon
+            p#temperature
+            p#description 
+    script(type="text/javascript" src="javascripts/dom.js").
