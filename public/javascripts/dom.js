@@ -4,11 +4,15 @@ const city = document.getElementById("city")
 const temp = document.getElementById("temperature")
 const description = document.getElementById("description")
 const icon = document.getElementById("icon")
-const stateInput = document.getElementById("stateInput")
+let stateCode 
+
+
 
 
 cityBtn.addEventListener("click", () => {
-    var url= `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value},${stateInput.value},US&appid=35f1b4967b15466c87502e7b3aef9681`
+    
+    var url= `https://api.openweathermap.org/data/2.5/weather?zip=${cityInput.value},US&appid=35f1b4967b15466c87502e7b3aef9681`
+    console.log(url)
     fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -22,8 +26,9 @@ cityBtn.addEventListener("click", () => {
     temp.innerHTML = weather.temperature +" °F"
     description.innerHTML = weather.description
     icon.src = `http://openweathermap.org/img/w/${weather.icon}.png`;
+   
 
 });
 
-    console.log(data)
+
 })
