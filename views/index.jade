@@ -1,7 +1,8 @@
 extends layout
 
 block content
-    h1= title
+    
+    h1 Weather APP
     p Welcome to #{title}
     div.input
         p Look up a city!
@@ -13,7 +14,7 @@ block content
         input(type="submit" id="cityButton" value="Find City")
     p.title Todays Weather in:
     div.container
-        span.fa.fa-star.checked#star
+        span.fa.fa-star#star
         div.items
             p#city.city
             img.icon#icon

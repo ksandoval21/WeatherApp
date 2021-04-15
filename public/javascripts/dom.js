@@ -5,7 +5,7 @@ const temp = document.getElementById("temperature")
 const description = document.getElementById("description")
 const icon = document.getElementById("icon")
 const stateInput = document.getElementById("stateInput")
-
+const star = document.getElementById("star")
 
 cityBtn.addEventListener("click", () => {
     var url= `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value},${stateInput.value},US&appid=35f1b4967b15466c87502e7b3aef9681`
@@ -27,3 +27,17 @@ cityBtn.addEventListener("click", () => {
 
     console.log(data)
 })
+// if (cityInput.value == " "){
+//     container.style.visibility = "hidden";;
+// }else{
+//     container.style.visibility ="visible";
+// }
+let display= false
+star.addEventListener("click", () => {
+if(display){
+    star.classList.add("checked")
+}else{
+    star.classList.remove("checked")
+}
+display = !display
+});
