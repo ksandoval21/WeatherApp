@@ -1,8 +1,9 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
-body {
+body{
   /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(147, 248, 255);
+  background-color: rgb(147, 248, 255)!important;
+  padding-bottom: 25px ;
 }
 
 a {
@@ -13,11 +14,14 @@ a {
   font-weight: bold;
 }
 .container{
-  background-color: aqua;
-  width: 200px;
-  display:auto;
-  position: relative;
-  left: 550px;
+  background-color: rgb(253, 255, 255);
+  width: 250px!important;
+  display: auto !important;;
+  display: flex;
+  margin:auto;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(57, 66, 66, 0.4);
+  
 }
 .title{
   text-align: center;
@@ -25,18 +29,26 @@ a {
   font-weight: bold;
   
 }
-.input{
-  padding-left: 50px;
-  padding-top: 50px;
-}
 .checked{
-  color: yellow;
+  color: rgb(235, 128, 42);
 }
 #star{
   font-size: 25px;
-  padding: 5px;
+  padding: 10px;
+  height: 10px;
   
 }
 .items{
-  text-align: center;
+  text-align: center!important;
+  padding: 5px;
+}
+.logo{
+  margin: 25px 50px 50px 50px;
+  font-weight: bold;
+}
+.input{
+  margin: 50px 50px 50px 50px;
+}
+.icon{
+  width: 80px;
 }

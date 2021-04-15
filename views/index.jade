@@ -1,15 +1,14 @@
 extends layout
 
 block content
-    h1= title
-    p Welcome to #{title}
+    h1.logo Weatherly 
     div.input
         p Look up a city!
         input(type="text", name="city", placeholder="ENTER CITY", id='cityInput')
         input(type="submit" id="cityButton" value="Find City")
     p.title Todays Weather in:
     div.container
-        span.fa.fa-star.checked#star
+        span.fa.fa-star#star
         div.items
             p#city.city
             img.icon#icon
