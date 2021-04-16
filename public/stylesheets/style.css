@@ -50,3 +50,11 @@ a {
 .icon{
   width: 80px;
 }
+.favorites{
+  background-color: rgb(95, 109, 240);
+  margin: 100px 200px 200px 140px;
+  width: 1000px;
+}
+.fav{
+  padding: 15px;
+}

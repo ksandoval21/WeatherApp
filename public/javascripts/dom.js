@@ -4,12 +4,11 @@ const city = document.getElementById("city")
 const temp = document.getElementById("temperature")
 const description = document.getElementById("description")
 const icon = document.getElementById("icon")
-let stateCode 
 const stateInput = document.getElementById("stateInput")
 const star = document.getElementById("star")
 const container = document.querySelector(".container")
 const title = document.querySelector(".title")
-
+const favorites = document.querySelector(".favorites")
 
 cityBtn.addEventListener("click", () => {
     var url= `https://api.openweathermap.org/data/2.5/weather?zip=${cityInput.value},US&appid=35f1b4967b15466c87502e7b3aef9681`
@@ -29,8 +28,6 @@ cityBtn.addEventListener("click", () => {
     temp.innerHTML = weather.temperature +" °F"
     description.innerHTML = weather.description
     icon.src = `http://openweathermap.org/img/w/${weather.icon}.png`;
-   
-
 });
 
 
@@ -40,8 +37,23 @@ let display= false
 star.addEventListener("click", () => {
 if(display){
     star.classList.add("checked")
+
 }else{
     star.classList.remove("checked")
 }
 display = !display
 });
+let favorites = []
+function displayFavorites(favorites){
+    for (const favorite of favorites) {
+        favorites.insertAdjacentHTML(
+        "beforeend",`
+        <div class="container">
+            <p class="city" ></p>
+            <img></img>
+            <p ></p>
+            <p></p>
+        </div>`
+        )
+    }
+}
