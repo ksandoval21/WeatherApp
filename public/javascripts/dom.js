@@ -5,7 +5,7 @@ const temp = document.getElementById("temperature")
 const description = document.getElementById("description")
 const icon = document.getElementById("icon")
 const stateInput = document.getElementById("stateInput")
-const star = document.getElementById("star")
+const star = document.querySelector(".star")
 const container = document.querySelector(".container")
 const title = document.querySelector(".title")
 const favorites = document.querySelector(".favorites")
@@ -22,43 +22,25 @@ cityBtn.addEventListener("click", () => {
         temperature :  parseInt((data.main.temp- 273.15) * 1.8 + 32),
         description : data.weather[0].description,
         icon : data.weather[0].icon
-<<<<<<< HEAD
     };
     city.innerHTML = weather.city
     temp.innerHTML = weather.temperature +" °F"
     description.innerHTML = weather.description
     icon.src = `http://openweathermap.org/img/w/${weather.icon}.png`;
-=======
-        };
-        city.innerHTML = weather.city
-        temp.innerHTML = weather.temperature +" °F"
-        description.innerHTML = weather.description
-        icon.src = `http://openweathermap.org/img/w/${weather.icon}.png`;
-    });
->>>>>>> 38dd2181c5f7814325c740fd01d8ef1a5e890c56
 });
-
-let display= false
-// star.addEventListener("click", () => {
-// if(display){
-//     star.classList.add("checked")
-// }else{
-//     star.classList.remove("checked")
-// }
-// display = !display
-// });
-
 
 let display= false
 star.addEventListener("click", () => {
 if(display){
     star.classList.add("checked")
-
 }else{
     star.classList.remove("checked")
 }
 display = !display
 });
+
+
+
 // let favorites = []
 // function displayFavorites(favorites){
 //     for (const favorite of favorites) {
@@ -74,10 +56,10 @@ display = !display
 //     }
 // }
 
-for (const place of favorites){
-    if (place.class === "unchecked"){
-        const index = favorites.indexOf(place);
-        favorites.splice(index, 1)
-    }
-}
-console.log(favorites)
+// for (const place of favorites){
+//     if (place.class === "unchecked"){
+//         const index = favorites.indexOf(place);
+//         favorites.splice(index, 1)
+//     }
+// }
+})
