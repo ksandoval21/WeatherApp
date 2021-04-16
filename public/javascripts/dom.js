@@ -43,17 +43,17 @@ if(display){
 }
 display = !display
 });
-let favorites = []
-function displayFavorites(favorites){
-    for (const favorite of favorites) {
-        favorites.insertAdjacentHTML(
-        "beforeend",`
-        <div class="container">
-            <p class="city" ></p>
-            <img></img>
-            <p ></p>
-            <p></p>
-        </div>`
-        )
-    }
-}
+// let favorites = []
+// function displayFavorites(favorites){
+//     for (const favorite of favorites) {
+//         favorites.insertAdjacentHTML(
+//         "beforeend",`
+//         <div class="container">
+//             <p class="city" ></p>
+//             <img></img>
+//             <p ></p>
+//             <p></p>
+//         </div>`
+//         )
+//     }
+// }
