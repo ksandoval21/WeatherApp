@@ -2,7 +2,10 @@
 body{
   /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(147, 248, 255)!important;
+  background-image: url(images/pic.jpg);
+  background-position: center;
+  
+  background-size: cover;
   padding-bottom: 15px ;
 }
 
@@ -43,6 +46,7 @@ a {
 .logo{
   margin: 25px 50px 50px 50px;
   font-weight: bold;
+  color:rgb(189, 192, 196)
 }
 .input{
   text-align: center;
