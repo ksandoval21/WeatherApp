@@ -2,7 +2,10 @@
 body{
   /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(147, 248, 255)!important;
+  background-image: url(images/pic.jpg);
+  background-position: center;
+  
+  background-size: cover;
   padding-bottom: 15px ;
 }
 
@@ -10,12 +13,12 @@ a {
   color: #98d2e9;
 }
 .city{
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
 .container{
   background-color: rgb(236, 241, 241);
-  width: 250px!important;
+  width: 350px!important;
   border-radius: 25px;
   box-shadow: 0 10px 10px rgba(57, 66, 66, 0.4);
   visibility: hidden;
@@ -43,9 +46,11 @@ a {
 .logo{
   margin: 25px 50px 50px 50px;
   font-weight: bold;
+  color:rgb(189, 192, 196)
 }
 .input{
-  margin: 50px 50px 50px 50px;
+  text-align: center;
+  padding-bottom: 50px;
 }
 .icon{
   width: 80px;
