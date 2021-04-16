@@ -3,7 +3,7 @@ body{
   /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: rgb(147, 248, 255)!important;
-  padding-bottom: 25px ;
+  padding-bottom: 15px ;
 }
 
 a {
@@ -31,10 +31,10 @@ a {
 .checked{
   color: rgb(235, 128, 42);
 }
-#star{
+.star{
   font-size: 25px;
   padding: 10px;
-  height: 10px;
+  height: 20px!important;
   
 }
 .items{
