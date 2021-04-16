@@ -19,7 +19,7 @@ a {
   border-radius: 25px;
   box-shadow: 0 10px 10px rgba(57, 66, 66, 0.4);
   visibility: hidden;
-
+  padding-bottom: 2px;
 }
 .title{
   text-align: center;
