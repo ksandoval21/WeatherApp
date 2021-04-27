@@ -66,7 +66,7 @@ cityBtn.addEventListener("click", () => {
     // }
     display = !display
 
-    });
+    };
 
 
 })
